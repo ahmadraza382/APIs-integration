@@ -2,9 +2,6 @@ import { headers } from "next/headers";
 import { GetServerSideProps } from "next";
 
  
-
-
-
  
 export  async function fetchProperties() {
 
@@ -19,7 +16,6 @@ export  async function fetchProperties() {
     }
 }
 
-// actions/property.action.ts
 export const postContacts = async (firstName: string, email: string) => {
     try {
       const res = await fetch("https://dummyjson.com/users/add", {
